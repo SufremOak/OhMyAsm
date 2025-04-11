@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@vef/color-me": "npm:@jsr/vef__color-me@^1.0.3",
+    "@vef/easy-cli": "npm:@jsr/vef__easy-cli@^0.2.9",
+    "@vef/easy-command": "npm:@jsr/vef__easy-command@^1.0.2"
+  }
+}
