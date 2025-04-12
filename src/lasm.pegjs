@@ -25,6 +25,32 @@
     return { type: "memory", address: address };
   }
 
+  // Helper functions to create AST nodes.  These make the output of the parser
+  // easier to work with in later stages of your assembler.
+  function makeInstruction(name, operands) {
+    return { type: "instruction", name: name.toLowerCase(), operands: operands };
+  }
+
+  function makeLabel(name) {
+    return { type: "label", name: name };
+  }
+
+  function makeVariable(name, type) {
+    return { type: "variable", name: name, dataType: type };
+  }
+
+  function makeConstant(name, value, type) {
+    return { type: "constant", name: name, value: value, dataType: type };
+  }
+
+  function makeRegister(name) {
+    return { type: "register", name: name.toLowerCase() };
+  }
+
+  function makeMemory(address) {
+    return { type: "memory", address: address };
+  }
+
   function makeImmediate(value, type) {
     return { type: "immediate", value: value, dataType: type };
   }
