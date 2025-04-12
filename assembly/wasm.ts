@@ -1,11 +1,11 @@
 import { init, Wasmer, runWasix, initializeLogger } from '@wasmer/sdk';
 import markdownRendererUrl from "./OhMyAsmWasmHelperRS/target/wasm32-wasi/release/OhMyAsmWasmHelperRS.wasm?url";
 
-export function WasmerFunc(OhMyAsmWasmHelper: type): <void> {
+export function WasmerFunc(OhMyAsmWasmHelper: type) {
     function main(): void {
         /**the main function is the main function of the assembly language */
     }
-    return <void>;
+    return void;
 }
 
 function main() {

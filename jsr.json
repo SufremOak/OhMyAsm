@@ -1,5 +1,6 @@
 {
     "name": "@sufremoak/ohmyasm",
     "version": "0.1.0-alpha-1",
-    "extends": "./mod.ts"
-}
+    "license": "MIT",
+    "exports": "./mod.ts"
+  }
