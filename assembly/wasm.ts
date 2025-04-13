@@ -1,4 +1,5 @@
 import { init, Wasmer, runWasix, initializeLogger } from '@wasmer/sdk';
+
 import markdownRendererUrl from "./OhMyAsmWasmHelperRS/target/wasm32-wasi/release/OhMyAsmWasmHelperRS.wasm?url";
 
 export function WasmerFunc(OhMyAsmWasmHelper: type) {
