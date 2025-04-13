@@ -1,6 +1,8 @@
-org 1000
+; #############################
+; #      The OhMyAsm cli      #
+  ; 
 
-.text
+[org 10000]
+bits 16
 
-_start:
-    ;; main
+
