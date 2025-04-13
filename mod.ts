@@ -1,8 +1,1 @@
-function typeName(name:string) {
-  //
-}
-
-/** Default function  */
-export default class OhMyAsm {
-  //
-}
+export { Asm } from "./Asm";
