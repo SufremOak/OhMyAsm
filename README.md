@@ -23,20 +23,22 @@ OhMyAsm is a TypeScript and WebAssembly-based Assembly language framework and cu
 2. **Example**
     
     ```typescript
-    import { OhMyAsmWasmHelper, Asm } from "@sufremoak/ohmyasm";
-
-    await Asm(init(this));
-
+        import { OhMyAsmWasmHelper, Asm } from "@sufremoak/ohmyasm";
+    
+    await Asm.init(this);
+    
     $(function() {
-        OhMyAsmWasmHelper.AsmCode( __asm__ => {
-            include "oma.asm"
-
-            _start:
-               mov rax, 60
-               mov rdi, 0
-               syscall();
-            end(__asm__);
-        })
+        OhMyAsmWasmHelper.AsmCode(__asm__ => {
+            __asm__.include("oma.asm");
+    
+            __asm__.label("_start");
+            __asm__.instruction("mov rax, 60");
+            __asm__.instruction("mov rdi, 0");
+            __asm__.instruction("syscall");
+            __asm__.end(code => {
+                console.log("Generated Assembly Code:\n", code);
+            });
+        });
     });
     ```
 
