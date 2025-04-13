@@ -13,5 +13,9 @@
   },
   "devDependencies": {
     "@types/node": "^22.14.1"
+  },
+  "scripts": {
+    "build:wat": "wat2wasm ./assembly/OhMyAsm.wat",
+    "build:wasm": "cd ./assembly/OhMyAsmWasmHelperRS/ && cargo build --release --target=wasm32-wasi"
   }
 }
