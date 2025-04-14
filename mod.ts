@@ -1,1 +1,1 @@
-export { Asm } from "./Asm";
+export { Asm, OhMyAsm } from "./src/main.ts";

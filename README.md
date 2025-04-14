@@ -1,51 +1,34 @@
-markdown
 # OhMyAsm
+OhMyAsm is a powerful assembler for the OhMyAsm Framework.
 
-OhMyAsm is a TypeScript and WebAssembly-based Assembly language framework and custom variation.
+## Installation
 
-## Features
+To install OhMyAsm, run the following command:
 
--   **TypeScript Support**: Write Assembly code using TypeScript.
--   **WebAssembly Target**: Compile to WebAssembly for high performance.
--   **Custom Assembly**: Define and implement your own Assembly variations.
--   **Cross-Platform**: Run your Assembly code in any environment that supports WebAssembly.
-- **Easy to use**: It is simple to implement and get started with the framework.
-- **Versatile**: You can easily adapt the framework to work with a wide variety of use cases.
+```bash
+deno install -A -n omac https://deno.land/x/ohmyasm/mod.ts
+```
 
-## Getting Started
+## Usage
 
-1.  **Installation**
-    
-    ```bash
-    npx jsr add @sufremoak/ohmyasm 
-    ```
-    
-2. **Example**
-    
-    ```typescript
-        import { OhMyAsmWasmHelper, Asm } from "@sufremoak/ohmyasm";
-    
-    await Asm.init(this);
-    
-    $(function() {
-        OhMyAsmWasmHelper.AsmCode(__asm__ => {
-            __asm__.include("oma.asm");
-    
-            __asm__.label("_start");
-            __asm__.instruction("mov rax, 60");
-            __asm__.instruction("mov rdi, 0");
-            __asm__.instruction("syscall");
-            __asm__.end(code => {
-                console.log("Generated Assembly Code:\n", code);
-            });
-        });
-    });
-    ```
+To use OhMyAsm, run the following command:
 
-## Contributing
+```bash
+omac <file.asm>
+```
 
-I welcome contributions to OhMyAsm! Please see our contributing guide for details.
+## Documentation
+
+For more information on how to use OhMyAsm, please refer to the [documentation](https://jsr.io/@ohmyasm/oma).
 
 ## License
 
-This project is licensed under the MIT License.
+OhMyAsm is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+
+We welcome contributions to OhMyAsm! Please see our [contributing guidelines](CONTRIBUTING.md) for more information.
+
+## Support
+
+If you need help with OhMyAsm, just struggle to do it yourself.
