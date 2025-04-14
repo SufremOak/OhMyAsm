@@ -1,0 +1,33 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@std/cli@^1.0.16": "1.0.16",
+    "npm:assemblyscript@~0.27.35": "0.27.35"
+  },
+  "jsr": {
+    "@std/cli@1.0.16": {
+      "integrity": "02df293099c35b9e97d8ca05f57f54bd1ee08134f25d19a4756b3924695f4b00"
+    }
+  },
+  "npm": {
+    "assemblyscript@0.27.35": {
+      "integrity": "sha512-aAhrje38eLG7IWvF4jbKUeUcPAfE91gVPBcgcS/ZoNWLD3AjdZUyDNTmEajK2xDlq0vAn5ZiSIdNyHFPfE5JiQ==",
+      "dependencies": [
+        "binaryen",
+        "long"
+      ]
+    },
+    "binaryen@116.0.0-nightly.20240114": {
+      "integrity": "sha512-0GZrojJnuhoe+hiwji7QFaL3tBlJoA+KFUN7ouYSDGZLSo9CKM8swQX8n/UcbR0d1VuZKU+nhogNzv423JEu5A=="
+    },
+    "long@5.3.1": {
+      "integrity": "sha512-ka87Jz3gcx/I7Hal94xaN2tZEOPoUOEVftkQqZx2EeQRN7LGdfLlI3FvZ+7WDplm+vK2Urx9ULrvSowtdCieng=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/cli@^1.0.16",
+      "npm:assemblyscript@~0.27.35"
+    ]
+  }
+}
