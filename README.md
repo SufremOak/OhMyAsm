@@ -1,4 +1,8 @@
 # OhMyAsm
+[![JSR Scope](https://jsr.io/badges/@ohmyasm)](https://jsr.io/@ohmyasm)
+[![JSR](https://jsr.io/badges/@ohmyasm/oma)](https://jsr.io/@ohmyasm/oma)
+[![JSR Score](https://jsr.io/badges/@ohmyasm/oma/score)](https://jsr.io/@ohmyasm/oma)
+
 OhMyAsm is a powerful assembler for the OhMyAsm Framework.
 
 ## Installation
