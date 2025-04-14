@@ -10,7 +10,10 @@ OhMyAsm is a powerful assembler for the OhMyAsm Framework.
 To install OhMyAsm, run the following command:
 
 ```bash
+# install via Deno
 deno install -A -n omac https://deno.land/x/ohmyasm/mod.ts
+# install via install script
+curl -fsSL https://jsr.io/@ohmyasm/oma/0.2.1/scripts/install.sh | bash
 ```
 
 ## Usage
